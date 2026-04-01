@@ -1,0 +1,16 @@
+1.1 - Motivação
+
+O uso de dados e técnicas de inteligência artificial tem crescido significativamente no ambiente empresarial, especialmente em 
+setores como telecomunicações e serviços por assinatura, onde a retenção de clientes é fundamental para a sustentabilidade do negócio 
+(HAN; KAMBER; PEI, 2012). 
+Nesse contexto, o churn se destaca como um problema relevante, pois está diretamente relacionado à perda de receita e à necessidade constante 
+de aquisição de novos clientes (VERHOEF, 2003).
+Apesar desse cenário, muitas organizações ainda enfrentam dificuldades em utilizar seus dados de forma estratégica para prever o cancelamento de clientes. 
+Limitações como baixa maturidade analítica, falta de modelos preditivos e dificuldade na interpretação dos dados impedem uma atuação proativa frente ao problema 
+(WITTEN; FRANK; HALL, 2016).
+Essa lacuna impacta diretamente as empresas, que acabam tomando decisões reativas, aumentando custos operacionais e reduzindo sua 
+competitividade no mercado. Além disso, a ausência de previsões confiáveis dificulta a personalização de estratégias de 
+retenção e o melhor aproveitamento dos recursos disponíveis.
+Diante disso, este trabalho propõe o desenvolvimento de um sistema baseado em técnicas de Machine Learning para prever o 
+churn de clientes, permitindo que as organizações atuem de forma preventiva. O objetivo é apoiar a tomada de decisão e melhorar as 
+estratégias de retenção, beneficiando diretamente empresas do setor e fortalecendo sua capacidade competitiva (GERON, 2019).
