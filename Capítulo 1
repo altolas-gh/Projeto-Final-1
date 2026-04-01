@@ -38,3 +38,11 @@ em empresas de telecomunicações, contribuindo para a redução de perdas e o a
 A aplicação de técnicas de Machine Learning na análise de dados de clientes contribui para a previsão do 
 cancelamento (churn), permitindo a adoção de ações preventivas que auxiliam na redução da evasão e no 
 fortalecimento da retenção de clientes.
+
+1.4 - Objetivo
+
+O objetivo geral deste trabalho é desenvolver um sistema preditivo baseado em técnicas de Machine Learning para prever o 
+cancelamento de clientes (churn) em empresas de telecomunicações, apoiando estratégias de retenção. 
+Para atingir esse objetivo, serão utilizados modelos de aprendizado de máquina aplicados a dados históricos de clientes, juntamente 
+com ferramentas e bibliotecas de análise de dados.
+
