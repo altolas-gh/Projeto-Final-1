@@ -46,3 +46,9 @@ cancelamento de clientes (churn) em empresas de telecomunicações, apoiando est
 Para atingir esse objetivo, serão utilizados modelos de aprendizado de máquina aplicados a dados históricos de clientes, juntamente 
 com ferramentas e bibliotecas de análise de dados.
 
+1.5 – Organização do Trabalho
+
+Este trabalho está organizado em quatro capítulos. O capítulo 1 apresenta a introdução, incluindo a motivação, o problema, a hipótese 
+e os objetivos. O capítulo 2 aborda o referencial teórico, com base em conceitos de análise de dados, Machine Learning e previsão de churn. 
+O capítulo 3 descreve o desenvolvimento do sistema proposto, bem como as etapas e técnicas utilizadas ao longo do projeto. 
+Por fim, o capítulo 4 apresenta as referências bibliográficas utilizadas na elaboração deste trabalho.
