@@ -24,3 +24,12 @@ Diante disso, este trabalho propõe o desenvolvimento de um sistema baseado em t
 churn de clientes, permitindo que as organizações atuem de forma preventiva. O objetivo é apoiar a tomada de decisão e melhorar as 
 estratégias de retenção, beneficiando diretamente empresas do setor e fortalecendo sua capacidade competitiva (GERON, 2019).
 
+1.2 - Problema
+
+Apesar da relevância do problema de cancelamento de clientes no setor de telecomunicações e serviços por assinatura, muitas empresas 
+ainda não utilizam seus dados de forma estratégica para antecipar esse comportamento e agir preventivamente. 
+Esse cenário afeta diretamente as organizações, que enfrentam perda de receita e 
+aumento dos custos para aquisição de novos clientes, comprometendo sua competitividade e sustentabilidade. 
+Portanto, este trabalho busca responder: como técnicas de Machine Learning podem ser utilizadas para prever o cancelamento de clientes 
+em empresas de telecomunicações, contribuindo para a redução de perdas e o aumento da retenção?
+
