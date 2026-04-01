@@ -1,0 +1,6 @@
+1.4 - Objetivo
+
+O objetivo geral deste trabalho é desenvolver um sistema preditivo baseado em técnicas de Machine Learning para prever o 
+cancelamento de clientes (churn) em empresas de telecomunicações, apoiando estratégias de retenção. 
+Para atingir esse objetivo, serão utilizados modelos de aprendizado de máquina aplicados a dados históricos de clientes, juntamente 
+com ferramentas e bibliotecas de análise de dados.
