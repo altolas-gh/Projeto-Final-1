@@ -1,0 +1,11 @@
+2.3 - Machine Learning
+Machine Learning (aprendizado de máquina) é uma subárea da inteligência artificial que permite a construção de modelos 
+capazes de aprender padrões a partir de dados e realizar previsões ou decisões sem serem explicitamente programados (GERON, 2019).
+Esses modelos utilizam algoritmos que identificam relações entre variáveis de entrada (features) e uma variável de saída (target), permitindo 
+generalizar esse conhecimento para novos dados.
+Os principais tipos de aprendizado de máquina são:
+Aprendizado supervisionado: utiliza dados rotulados para treinar modelos;
+Aprendizado não supervisionado: identifica padrões em dados sem rótulos;
+Aprendizado por reforço: baseado em interação com o ambiente e recompensas.
+No contexto deste trabalho, será utilizado o aprendizado supervisionado, uma vez que o objetivo é classificar 
+clientes entre duas classes: churn (cancelamento) e não churn (permanência).
