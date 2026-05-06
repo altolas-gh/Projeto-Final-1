@@ -1,0 +1,13 @@
+2.2 - Churn de Clientes
+O churn de clientes refere-se ao cancelamento de serviços por parte dos consumidores em um determinado período. 
+Esse fenômeno é especialmente relevante em setores como telecomunicações, serviços financeiros e plataformas de assinatura, onde a retenção de clientes está 
+diretamente associada à receita e à sustentabilidade do negócio.
+De acordo com Verhoef (2003), a perda de clientes implica não apenas na redução da receita recorrente, mas também no aumento dos custos operacionais, uma vez que 
+a aquisição de novos clientes tende a ser mais onerosa do que a retenção dos atuais.
+O churn pode ser classificado em diferentes tipos, sendo os principais:
+Churn voluntário: ocorre quando o cliente decide cancelar o serviço por iniciativa própria;
+Churn involuntário: ocorre devido a fatores externos, como falhas de pagamento ou encerramento de contratos;
+Churn contratual: relacionado a contratos com período definido;
+Churn não contratual: comum em serviços sem vínculo formal, onde o cliente simplesmente deixa de utilizar o serviço.
+Neste trabalho, o foco está no churn voluntário em bases de dados estruturadas, analisado em períodos mensais, permitindo 
+a identificação antecipada de padrões de cancelamento.
