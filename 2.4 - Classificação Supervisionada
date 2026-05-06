@@ -1,0 +1,23 @@
+2.4 Classificação Supervisionada
+A classificação supervisionada consiste em treinar modelos a partir de dados rotulados para prever categorias discretas (HAN; KAMBER; PEI, 2012).
+No problema de churn, trata-se de um problema de classificação binária:
+Classe 0: cliente permanece;
+Classe 1: cliente cancela.
+Diversos algoritmos podem ser utilizados para esse tipo de problema, entre os quais destacam-se: 
+
+2.4.1 Regressão Logística
+A Regressão Logística é um modelo estatístico utilizado para estimar a probabilidade de ocorrência de um evento binário 
+(HOSMER; LEMESHOW; STURDIVANT, 2013).
+Esse modelo é amplamente utilizado devido à sua interpretabilidade e eficiência, sendo frequentemente adotado como baseline 
+em problemas de classificação.
+
+2.4.2 Random Forest
+O Random Forest é um algoritmo de aprendizado baseado em múltiplas árvores de decisão, combinadas para melhorar o desempenho e reduzir 
+o overfitting (BREIMAN, 2001).
+Esse método utiliza amostragem aleatória de dados e atributos, tornando-o robusto e eficaz em problemas com grande volume 
+de dados e variáveis complexas.
+
+2.4.3 Árvores de Decisão
+As Árvores de Decisão são modelos que utilizam regras hierárquicas para classificação, baseadas na divisão sucessiva dos dados.
+Apesar de sua alta interpretabilidade, esses modelos podem sofrer com overfitting, sendo comum a utilização de técnicas de poda ou 
+ensembles para melhorar seu desempenho (WITTEN; FRANK; HALL, 2016).
