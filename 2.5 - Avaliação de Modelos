@@ -1,0 +1,29 @@
+2.5 Avaliação de Modelos
+A avaliação de modelos é essencial para verificar seu desempenho e capacidade de generalização (GERON, 2019).
+As principais métricas utilizadas em classificação binária são:
+
+Acurácia: proporção de acertos;
+Precisão: proporção de positivos corretamente identificados;
+Recall: capacidade de identificar todos os positivos;
+F1-score: equilíbrio entre precisão e recall.
+
+Em problemas de churn, é comum haver desbalanceamento de classes, tornando métricas como recall e F1-score mais relevantes 
+do que a acurácia isoladamente (WITTEN; FRANK; HALL, 2016).
+Além das métricas tradicionais, uma ferramenta fundamental para análise do desempenho de modelos de classificação é a matriz de confusão. 
+Essa matriz permite uma visualização detalhada dos resultados do modelo, evidenciando não apenas os acertos, mas também os diferentes tipos 
+de erro cometidos durante a classificação (HAN; KAMBER; PEI, 2012).
+
+A matriz de confusão é composta por quatro elementos principais:
+Verdadeiros Positivos (VP): clientes corretamente classificados como churn;
+Verdadeiros Negativos (VN): clientes corretamente classificados como não churn;
+Falsos Positivos (FP): clientes classificados como churn, mas que não cancelaram;
+Falsos Negativos (FN): clientes classificados como não churn, mas que cancelaram.
+
+A análise desses quatro componentes é essencial para compreender o comportamento do modelo em cenários reais. 
+No contexto de churn, os erros possuem impactos diferentes para o negócio. Por exemplo, um falso negativo (FN) representa um cliente que 
+irá cancelar, mas não foi identificado pelo modelo, o que pode resultar em perda direta de receita. Já um falso positivo (FP) indica que a empresa pode 
+direcionar ações de retenção para um cliente que não cancelaria, gerando custo desnecessário.
+
+Dessa forma, a matriz de confusão permite uma análise mais aprofundada do desempenho do modelo, auxiliando na interpretação 
+das métricas como precisão e recall, que são diretamente derivadas desses valores. Além disso, ela possibilita ajustes mais estratégicos 
+no modelo, dependendo do objetivo da organização, como priorizar a redução de falsos negativos ou falsos positivos.
