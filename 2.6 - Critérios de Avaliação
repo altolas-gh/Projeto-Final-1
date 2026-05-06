@@ -1,0 +1,28 @@
+2.6 – Critérios de Avaliação da Solução
+A avaliação do modelo preditivo de churn desenvolvido neste trabalho será realizada com base em critérios quantitativos e qualitativos, 
+considerando tanto o desempenho dos algoritmos quanto sua capacidade de apoiar a tomada de decisão no contexto empresarial.
+Inicialmente, serão utilizadas métricas clássicas de avaliação de modelos de classificação, amplamente adotadas em problemas 
+de Machine Learning (GERON, 2019; WITTEN; FRANK; HALL, 2016). Essas métricas permitem mensurar a eficácia dos modelos na identificação de 
+clientes com maior probabilidade de cancelamento.
+
+Dentre os principais critérios adotados, destacam-se:
+Acurácia: mede a proporção total de previsões corretas realizadas pelo modelo. Apesar de ser uma métrica geral, pode apresentar limitações 
+em bases de dados desbalanceadas, como é comum em problemas de churn.
+
+Precisão (Precision): indica a proporção de clientes classificados como churn que realmente cancelaram o serviço. 
+Essa métrica é importante para evitar ações desnecessárias direcionadas a clientes que não apresentam risco real.
+
+Recall (Sensibilidade): mede a capacidade do modelo de identificar corretamente os clientes que efetivamente cancelam. 
+No contexto de churn, essa métrica é especialmente relevante, pois a não identificação de um cliente em risco pode gerar perdas financeiras.
+
+F1-score: representa o equilíbrio entre precisão e recall, sendo uma métrica adequada para cenários com desbalanceamento de classes.
+Além dessas métricas, será utilizada a matriz de confusão, que permite analisar detalhadamente os acertos e erros do modelo, identificando 
+casos de falsos positivos e falsos negativos (HAN; KAMBER; PEI, 2012).
+
+Outro critério importante será a comparação com um modelo baseline, que servirá como referência inicial de desempenho. Esse modelo poderá 
+ser baseado em uma abordagem simples, como a classificação pela classe majoritária ou um modelo estatístico básico. A comparação com o baseline 
+permite verificar se os modelos desenvolvidos apresentam ganhos reais de desempenho.
+Por fim, será considerada a interpretabilidade dos modelos, especialmente no caso da regressão logística e das árvores 
+de decisão, permitindo compreender quais variáveis influenciam a previsão de churn. Esse aspecto é relevante para que os 
+resultados possam ser utilizados de forma prática pelas organizações, apoiando estratégias de retenção de clientes. Logo, a avaliação busca 
+identificar o modelo que apresenta melhor desempenho estatístico e maior aplicabilidade no contexto real de negócio.
