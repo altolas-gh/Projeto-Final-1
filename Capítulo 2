@@ -1,0 +1,124 @@
+2 - Referencial Teórico
+
+Este capítulo está dividido em 6 seções. Na seção 2.1 é descrito o tipo de pesquisa adotado. 
+Em seguida, a seção 2.2 aborda o conceito de churn de clientes. A seção 2.3 apresenta os fundamentos de Machine Learning. 
+Na seção 2.4 são apresentados os modelos de classificação supervisionada utilizados. 
+A seção 2.5 trata das métricas de avaliação dos modelos. Por fim, a seção 2.6 apresenta os critérios de avaliação da solução proposta.
+
+2.1 - Tipo de Pesquisa
+
+Este trabalho caracteriza-se como uma pesquisa aplicada com abordagem quantitativa e exploratória, pois tem como objetivo utilizar 
+técnicas de Machine Learning para a resolução de um problema prático relacionado à previsão de churn de clientes, utilizando levantamento 
+bibliográfico, dados estruturados e modelos computacionais para análise e geração de resultados mensuráveis, visando compreender 
+o problema de churn e analisar e comparar o comportamento dos dados e o desempenho dos modelos desenvolvidos. 
+
+2.2 - Churn de Clientes
+
+O churn de clientes refere-se ao cancelamento de serviços por parte dos consumidores em um determinado período. 
+Esse fenômeno é especialmente relevante em setores como telecomunicações, serviços financeiros e plataformas de assinatura, onde a retenção de clientes está 
+diretamente associada à receita e à sustentabilidade do negócio.
+De acordo com Verhoef (2003), a perda de clientes implica não apenas na redução da receita recorrente, mas também no aumento dos custos operacionais, uma vez que 
+a aquisição de novos clientes tende a ser mais onerosa do que a retenção dos atuais.
+O churn pode ser classificado em diferentes tipos, sendo os principais:
+Churn voluntário: ocorre quando o cliente decide cancelar o serviço por iniciativa própria;
+Churn involuntário: ocorre devido a fatores externos, como falhas de pagamento ou encerramento de contratos;
+Churn contratual: relacionado a contratos com período definido;
+Churn não contratual: comum em serviços sem vínculo formal, onde o cliente simplesmente deixa de utilizar o serviço.
+Neste trabalho, o foco está no churn voluntário em bases de dados estruturadas, analisado em períodos mensais, permitindo 
+a identificação antecipada de padrões de cancelamento.
+
+2.3 - Machine Learning
+
+Machine Learning (aprendizado de máquina) é uma subárea da inteligência artificial que permite a construção de modelos 
+capazes de aprender padrões a partir de dados e realizar previsões ou decisões sem serem explicitamente programados (GERON, 2019).
+Esses modelos utilizam algoritmos que identificam relações entre variáveis de entrada (features) e uma variável de saída (target), permitindo 
+generalizar esse conhecimento para novos dados.
+Os principais tipos de aprendizado de máquina são:
+Aprendizado supervisionado: utiliza dados rotulados para treinar modelos;
+Aprendizado não supervisionado: identifica padrões em dados sem rótulos;
+Aprendizado por reforço: baseado em interação com o ambiente e recompensas.
+No contexto deste trabalho, será utilizado o aprendizado supervisionado, uma vez que o objetivo é classificar 
+clientes entre duas classes: churn (cancelamento) e não churn (permanência).
+
+2.4 Classificação Supervisionada
+A classificação supervisionada consiste em treinar modelos a partir de dados rotulados para prever categorias discretas (HAN; KAMBER; PEI, 2012).
+No problema de churn, trata-se de um problema de classificação binária:
+Classe 0: cliente permanece;
+Classe 1: cliente cancela.
+Diversos algoritmos podem ser utilizados para esse tipo de problema, entre os quais destacam-se: 
+
+2.4.1 Regressão Logística
+A Regressão Logística é um modelo estatístico utilizado para estimar a probabilidade de ocorrência de um evento binário 
+(HOSMER; LEMESHOW; STURDIVANT, 2013).
+Esse modelo é amplamente utilizado devido à sua interpretabilidade e eficiência, sendo frequentemente adotado como baseline 
+em problemas de classificação.
+
+2.4.2 Random Forest
+O Random Forest é um algoritmo de aprendizado baseado em múltiplas árvores de decisão, combinadas para melhorar o desempenho e reduzir 
+o overfitting (BREIMAN, 2001).
+Esse método utiliza amostragem aleatória de dados e atributos, tornando-o robusto e eficaz em problemas com grande volume 
+de dados e variáveis complexas.
+
+2.4.3 Árvores de Decisão
+As Árvores de Decisão são modelos que utilizam regras hierárquicas para classificação, baseadas na divisão sucessiva dos dados.
+Apesar de sua alta interpretabilidade, esses modelos podem sofrer com overfitting, sendo comum a utilização de técnicas de poda ou 
+ensembles para melhorar seu desempenho (WITTEN; FRANK; HALL, 2016).
+
+2.5 Avaliação de Modelos
+A avaliação de modelos é essencial para verificar seu desempenho e capacidade de generalização (GERON, 2019).
+As principais métricas utilizadas em classificação binária são:
+
+Acurácia: proporção de acertos;
+Precisão: proporção de positivos corretamente identificados;
+Recall: capacidade de identificar todos os positivos;
+F1-score: equilíbrio entre precisão e recall.
+
+Em problemas de churn, é comum haver desbalanceamento de classes, tornando métricas como recall e F1-score mais relevantes 
+do que a acurácia isoladamente (WITTEN; FRANK; HALL, 2016).
+Além das métricas tradicionais, uma ferramenta fundamental para análise do desempenho de modelos de classificação é a matriz de confusão. 
+Essa matriz permite uma visualização detalhada dos resultados do modelo, evidenciando não apenas os acertos, mas também os diferentes tipos 
+de erro cometidos durante a classificação (HAN; KAMBER; PEI, 2012).
+
+A matriz de confusão é composta por quatro elementos principais:
+Verdadeiros Positivos (VP): clientes corretamente classificados como churn;
+Verdadeiros Negativos (VN): clientes corretamente classificados como não churn;
+Falsos Positivos (FP): clientes classificados como churn, mas que não cancelaram;
+Falsos Negativos (FN): clientes classificados como não churn, mas que cancelaram.
+
+A análise desses quatro componentes é essencial para compreender o comportamento do modelo em cenários reais. 
+No contexto de churn, os erros possuem impactos diferentes para o negócio. Por exemplo, um falso negativo (FN) representa um cliente que 
+irá cancelar, mas não foi identificado pelo modelo, o que pode resultar em perda direta de receita. Já um falso positivo (FP) indica que a empresa pode 
+direcionar ações de retenção para um cliente que não cancelaria, gerando custo desnecessário.
+
+Dessa forma, a matriz de confusão permite uma análise mais aprofundada do desempenho do modelo, auxiliando na interpretação 
+das métricas como precisão e recall, que são diretamente derivadas desses valores. Além disso, ela possibilita ajustes mais estratégicos 
+no modelo, dependendo do objetivo da organização, como priorizar a redução de falsos negativos ou falsos positivos.
+
+2.6 – Critérios de Avaliação da Solução
+A avaliação do modelo preditivo de churn desenvolvido neste trabalho será realizada com base em critérios quantitativos e qualitativos, 
+considerando tanto o desempenho dos algoritmos quanto sua capacidade de apoiar a tomada de decisão no contexto empresarial.
+Inicialmente, serão utilizadas métricas clássicas de avaliação de modelos de classificação, amplamente adotadas em problemas 
+de Machine Learning (GERON, 2019; WITTEN; FRANK; HALL, 2016). Essas métricas permitem mensurar a eficácia dos modelos na identificação de 
+clientes com maior probabilidade de cancelamento.
+
+Dentre os principais critérios adotados, destacam-se:
+Acurácia: mede a proporção total de previsões corretas realizadas pelo modelo. Apesar de ser uma métrica geral, pode apresentar limitações 
+em bases de dados desbalanceadas, como é comum em problemas de churn.
+
+Precisão (Precision): indica a proporção de clientes classificados como churn que realmente cancelaram o serviço. 
+Essa métrica é importante para evitar ações desnecessárias direcionadas a clientes que não apresentam risco real.
+
+Recall (Sensibilidade): mede a capacidade do modelo de identificar corretamente os clientes que efetivamente cancelam. 
+No contexto de churn, essa métrica é especialmente relevante, pois a não identificação de um cliente em risco pode gerar perdas financeiras.
+
+F1-score: representa o equilíbrio entre precisão e recall, sendo uma métrica adequada para cenários com desbalanceamento de classes.
+Além dessas métricas, será utilizada a matriz de confusão, que permite analisar detalhadamente os acertos e erros do modelo, identificando 
+casos de falsos positivos e falsos negativos (HAN; KAMBER; PEI, 2012).
+
+Outro critério importante será a comparação com um modelo baseline, que servirá como referência inicial de desempenho. Esse modelo poderá 
+ser baseado em uma abordagem simples, como a classificação pela classe majoritária ou um modelo estatístico básico. A comparação com o baseline 
+permite verificar se os modelos desenvolvidos apresentam ganhos reais de desempenho.
+Por fim, será considerada a interpretabilidade dos modelos, especialmente no caso da regressão logística e das árvores 
+de decisão, permitindo compreender quais variáveis influenciam a previsão de churn. Esse aspecto é relevante para que os 
+resultados possam ser utilizados de forma prática pelas organizações, apoiando estratégias de retenção de clientes. Logo, a avaliação busca 
+identificar o modelo que apresenta melhor desempenho estatístico e maior aplicabilidade no contexto real de negócio.
